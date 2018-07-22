@@ -36,6 +36,7 @@ class Tx(Tx):
         inputs = []
         for _ in range(num_inputs):
             inputs.append(TxIn.parse(s))
+
         # num_outputs is a varint, use read_varint(s)
         # each output needs parsing
         outputs = []
